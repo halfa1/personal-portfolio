@@ -1,0 +1,91 @@
+body{
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'nd nd nd nd nd nd'
+    'hd hd hd hd hd hd'
+    'td td td td td td'
+    'sd sd sd hbd hbd hbd'
+    'cd cd cd cd cd cd'
+    ;
+}
+#navbardiv{
+  grid-area: nd;
+  color: black;
+}
+#headerimagediv{
+    grid-area: hd;
+}
+
+#taglinediv{
+    grid-area: td;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#skillsdiv{
+    grid-area: sd;
+    margin: auto;
+
+}
+#hobbiesdiv{
+    grid-area: hbd;
+    margin: auto;
+
+}
+#contactformdiv{
+    grid-area: cd;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
+#contactformdiv ol{
+    list-style-type: circle;
+}
+#form{
+    max-width: 300px;
+    margin: auto;
+}
+img{
+    border-radius:0 0 10% 10%;
+}
+
+@media screen and (max-width:600px) {
+ .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'nd nd nd nd nd nd'
+        'hd hd hd hd hd hd'
+        'td td td td td td'
+        'sd sd sd sd sd sd'
+        'hbd hbd hbd hbd hbd hbd'
+        'cd cd cd cd cd cd'
+        ;
+ }    
+ #taglinediv{
+    grid-area: td;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#skillsdiv{
+    grid-area: sd;
+    margin: auto;
+
+}
+#hobbiesdiv{
+    grid-area: hbd;
+    margin: auto;
+
+}
+#form{
+    width: 90%;
+}
+}
